@@ -3,6 +3,28 @@
   background: linear-gradient(180deg, rgba(59, 130, 246, 0.05) 0%, transparent 100%);
 }
 
+.skills .section-title {
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: ombreFlow 3s ease infinite;
+}
+
+@keyframes ombreFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.skills .section-subtitle {
+  color: #ffffff;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -25,8 +47,13 @@
 .category-title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #3b82f6;
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
+  background-size: 200% 200%;
+  animation: ombreFlow 3s ease infinite;
 }
 
 .skill-items {

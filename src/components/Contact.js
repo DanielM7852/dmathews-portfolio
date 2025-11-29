@@ -8,7 +8,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `mailto:YOUR_EMAIL@example.com?subject=Portfolio Contact&body=${message}`;
+    window.location.href = `mailto:djmathews@ucsd.edu?subject=Portfolio Contact&body=${message}`;
   };
 
   return (
@@ -48,17 +48,17 @@ const Contact = () => {
             <h3 className="info-title">Connect With Me</h3>
             
             <div className="contact-links">
-              <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a href="https://github.com/DanielM7852" target="_blank" rel="noopener noreferrer" className="contact-link">
                 <FiGithub size={24} />
                 <span>GitHub</span>
                 <FiExternalLink size={16} />
               </a>
-              <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a href="https://www.linkedin.com/in/daniel-mathews-b6a0b6298/" target="_blank" rel="noopener noreferrer" className="contact-link">
                 <FiLinkedin size={24} />
                 <span>LinkedIn</span>
                 <FiExternalLink size={16} />
               </a>
-              <a href="mailto:YOUR_EMAIL@example.com" className="contact-link">
+              <a href="mailto:djmathews@ucsd.edu" className="contact-link">
                 <FiMail size={24} />
                 <span>Email</span>
                 <FiExternalLink size={16} />
@@ -67,8 +67,7 @@ const Contact = () => {
 
             <div className="quick-info">
               <p><strong>Location:</strong> San Diego, CA</p>
-              <p><strong>Education:</strong> UC San Diego - Computer Science / Data Science</p>
-              <p><strong>Interests:</strong> ML, Quantitative Trading, Sports Analytics</p>
+              <p><strong>Education:</strong> UC San Diego - Data Science</p>
             </div>
           </div>
         </div>

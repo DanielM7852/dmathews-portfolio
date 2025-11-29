@@ -24,29 +24,29 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: 'BigDataView',
+      description: 'During my Data Science internship at Boeing, I collaborated with a mentor and a multi-disciplinary engineering team to create a Python visualization tool for multi-dimensional hypersonic and plane trajectory data. BigDataView uses Python, Matplotlib, JSON, and more to convert complex 5 or more dimensional data into comprehensive 2-D dashboards using nested heatmaps.',
+      technologies: ['Python', 'Matplotlib', 'JSON', 'Data Visualization'],
+      github: 'https://github.com/DanielM7852/BigDataView',
+      demo: '#',
+      highlights: ['7D Data Visualization', 'Heatmaps', 'Surface Plots']
+    },
+    {
+      id: 4,
       title: 'Quantitative Trading Models',
       description: 'Machine learning models for financial market prediction using time series analysis and ensemble methods',
       technologies: ['Python', 'NumPy', 'Scikit-learn', 'TensorFlow'],
       github: 'https://github.com/YOUR_GITHUB/quant-trading',
       demo: '#',
       highlights: ['Time Series', 'Ridge Regression', 'Backtesting']
-    },
-    {
-      id: 4,
-      title: 'Sports Analytics Dashboard',
-      description: 'Interactive dashboard for analyzing sports performance metrics and player statistics',
-      technologies: ['React', 'D3.js', 'Python', 'PostgreSQL'],
-      github: 'https://github.com/YOUR_GITHUB/sports-analytics',
-      demo: '#',
-      highlights: ['Data Visualization', 'Real-time Updates', 'Statistical Analysis']
     }
   ];
 
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2 className="section-title">Featured Projects</h2>
-        <p className="section-subtitle">Showcasing my work in machine learning, data science, and full-stack development</p>
+        <h2 className="section-title">Projects</h2>
+        <p className="section-subtitle">Other work in machine learning, data science, and full-stack development</p>
 
         <div className="projects-grid">
           {projects.map(project => (

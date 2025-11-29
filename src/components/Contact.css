@@ -4,12 +4,34 @@
   border-top: 1px solid rgba(148, 163, 184, 0.1);
 }
 
+.contact .section-title {
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: ombreFlow 3s ease infinite;
+}
+
+@keyframes ombreFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.contact .section-subtitle {
+  color: #ffffff;
+}
+
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 3rem auto 0;
 }
 
 .contact-form {
@@ -27,7 +49,7 @@
   background: rgba(30, 41, 59, 0.6);
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 8px;
-  color: #e2e8f0;
+  color: #ffffff;
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
@@ -60,6 +82,46 @@ textarea.form-input {
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: auto;
+  position: relative;
+}
+
+/* Rotating Border Animation for Submit Button - THICKER */
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #3b82f6, #8b5cf6);
+  background-size: 300% 300%;
+  border-radius: 8px;
+  z-index: -1;
+  animation: rotateBorder 3s linear infinite;
+}
+
+.submit-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+@keyframes rotateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .submit-btn:hover {
@@ -76,7 +138,7 @@ textarea.form-input {
 .info-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #e2e8f0;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -98,6 +160,28 @@ textarea.form-input {
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 500;
+  position: relative;
+}
+
+/* Rotating Border Animation for Contact Links - THICKER */
+.contact-link::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #3b82f6, #8b5cf6);
+  background-size: 300% 300%;
+  border-radius: 8px;
+  z-index: -1;
+  animation: rotateBorder 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contact-link:hover::before {
+  opacity: 1;
 }
 
 .contact-link:hover {
@@ -116,12 +200,12 @@ textarea.form-input {
 
 .quick-info p {
   margin: 0.5rem 0;
-  color: #cbd5e1;
+  color: #ffffff;
   line-height: 1.6;
 }
 
 .quick-info strong {
-  color: #e2e8f0;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

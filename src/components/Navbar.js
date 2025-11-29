@@ -26,7 +26,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <span className="logo-text">D. Mathews</span>
+          <span className="logo-text">Daniel Mathews</span>
         </div>
 
         <button 

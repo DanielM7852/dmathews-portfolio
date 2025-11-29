@@ -1,0 +1,98 @@
+.featured-project {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.05) 100%);
+}
+
+.featured-project .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-project .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: ombreFlow 3s ease infinite;
+}
+
+@keyframes ombreFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.featured-project .section-subtitle {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+/* SKIPREDICT Embedded Section */
+.skipredict-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.skipredict-iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  display: block;
+}
+
+.skipredict-info {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.6));
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.skipredict-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: ombreFlow 3s ease infinite;
+}
+
+.skipredict-info p {
+  color: #ffffff;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .featured-project {
+    padding: 4rem 1rem;
+  }
+
+  .featured-project .section-title {
+    font-size: 2rem;
+  }
+
+  .skipredict-iframe {
+    height: 400px;
+  }
+}
