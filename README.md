@@ -1,7 +1,57 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Check out the finished version here: https://danielm7852.github.io/dmathews-portfolio/
+# Daniel Mathews - Data Science Portfolio
+
+A modern, interactive data science portfolio website showcasing machine learning projects, skills, and certifications. Built with React, featuring animated typing effects, embedded interactive tools, and a sleek dark theme with gradient accents.
+
+🌐 **Live Portfolio:** [https://DanielM7852.github.io/dmathews-portfolio](https://DanielM7852.github.io/dmathews-portfolio)
+
+---
+
+## 🎨 Features
+
+### Interactive Elements
+- **Animated Typing Effect** - Dynamic text animation with blinking cursor on the hero title
+- **Rotating Border Animations** - Eye-catching animated borders on all call-to-action buttons
+- **Ombre Gradient Titles** - Flowing blue-to-purple gradient animation on all section titles
+- **Smooth Scrolling Navigation** - Seamless navigation between sections with fixed navbar
+- **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
+
+### Sections
+- **Hero Section** - Engaging introduction with social links and call-to-action button
+- **Featured Project** - Embedded SKIPREDICT app (interactive song skipability analyzer)
+- **Projects** - Showcasing 4 major projects including BigDataView, NFL Big Data Bowl, ClarityCart, and Quantitative Trading Models
+- **Skills & Expertise** - 6 skill categories spanning ML, Data Science, Programming, Tools, Finance, and Web Development
+- **Certifications & Achievements** - 6 professional certifications from LinkedIn Learning, Coursera, and leading universities
+- **Contact Section** - Email contact form and direct links to GitHub, LinkedIn, and email
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React** - UI library for building interactive components
+- **React Icons** - Icon library for social links and visual elements
+- **CSS3** - Modern styling with animations and gradients
+- **HTML5** - Semantic markup and structure
+
+### Hosting & Deployment
+- **GitHub Pages** - Free hosting for static sites
+- **gh-pages** - Automated deployment tool for React apps
+
+---
+
+## 📋 Installation & Setup
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
+- Git
+
+### Local Development
+
+1. **Clone the Repository**
 
 ## Available Scripts
 
